@@ -12,7 +12,7 @@ import "strings"
 
 func main() {
 	csvFileName := flag.String("csv", "problems.csv", "a csv file with questions")
-	secondsTimeout := flag.Int("timeout", 5, "Timeout to answer a question. You lose if you take more time than that")
+	secondsTimeout := flag.Int("timeout", 30, "Timeout to answer a question. You lose if you take more time than that")
 	flag.Parse()
 
 	file, err := openCSV(csvFileName)
